@@ -1,0 +1,266 @@
+* body{
+font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+header {
+    background-color: rgb(4, 140, 213);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    border-radius: 100px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.header-btn {
+    border: none;
+    background-color: white;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.header-btn:hover {
+    background-color: rgb(4, 140, 213);
+    color: white;
+    border: 1px solid white;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    color: rgb(4, 140, 213);
+    background-color: white;
+}
+.about-section {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.skills-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: rgb(4, 140, 213);
+}
+
+.skills-section li {
+    background-color: white;
+    color: rgb(4,140,213);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.resume{
+    font-size: 2rem;
+    color: white;
+    padding: 2rem;
+    background-color: rgb(4, 140, 213);
+}
+
+.resume a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.fa-instagram{
+    padding: 5px;
+    background: linear-gradient( 45deg,
+        rgb(255, 0, 0), /*red*/
+        rgb(255, 165, 0), /*orange*/
+        rgb(255, 255, 0), /*yellow*/
+        rgb(0, 128, 0), /*green*/
+        rgb(0, 0, 255), /*blue*/
+        rgb(75, 0, 130), /*indigo*/
+        rgb(238, 130, 238) /*violet*/);
+    border-radius: 5px;
+    color: white;
+
+}
+
+.fa-linkedin{
+    background-color: rgb(24, 174, 228);
+    padding: 5px;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.fa-github{
+    background-color: black;
+    padding: 5px;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, rgb(4,140,213), rgb(0,90,150));
+    color: white;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    text-decoration: none;
+    background-color: white;
+    color: rgb(4,140,213);
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.hero-btn:hover {
+    background-color: rgb(230,230,230);
+}
+
+.projects-section {
+    padding: 2rem;
+}
+
+.projects-section h2 {
+    color: rgb(4,140,213);
+    margin-bottom: 20px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.social-links a {
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+.about-section,
+.skills-section,
+.resume {
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .header-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .logo {
+        text-align: center;
+    }
+}
+
+footer {
+    background: linear-gradient(135deg, #ffffff, #e6f4ff);
+    border-top: 3px solid rgb(4, 140, 213);
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer p {
+    color: rgb(4, 140, 213);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.social-section p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.social-links a {
+    font-size: 24px;
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px) scale(1.1);
+}
